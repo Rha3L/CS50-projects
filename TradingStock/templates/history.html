@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <form action="/history" method="get">
+        <div class="mb-3">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Shares</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Transacted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for transaction in transactions %}
+                        <tr>
+                            <td>{{ transaction["symbol"] }}</td>
+                            <td>{{ transaction["shareNum"] }}</td>
+                            <td>{{ transaction["price"] | usd }}</td>
+                            <td>{{ transaction["transactionType"] }}</td>
+                            <td>{{ transaction["transactionTime"] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </form>
+{% endblock %}

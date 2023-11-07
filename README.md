@@ -52,3 +52,17 @@ It takes a CSV file of FIFA Rating and outputs the chance of winning for each te
 Tech Stack:
 
 - Python
+
+### 5. Let's practice trading stocks!
+
+A web app implemented to manage portfolio of stocks. It requires user authentication to access their own portfolio. It has database to store user login details, trading history and balance. It allows users to check real stocks via API calls and also let users to buy and sell stocks by querying for stock's prices.
+
+Tech Stack:
+
+- Python
+- Flask
+- Bootstrap & CSS
+- HTML5
+- RESTful API
+- Sqlite3
+- SQL database with help from cs50 library

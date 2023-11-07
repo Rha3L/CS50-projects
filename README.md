@@ -34,3 +34,11 @@ Tech Stack:
 
 - C
 - functions with help from cs50 libaries
+
+### 4. DNA
+
+A program that will take a sequence of DNA (.text) and a CSV file containing STR counts for a list of individuals and then output to whom the DNA (most likely) belongs.
+
+Tech Stack:
+
+- Python
